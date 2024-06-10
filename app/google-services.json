@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1052377844315",
+    "project_id": "cityair-1c498",
+    "storage_bucket": "cityair-1c498.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052377844315:android:ede7b4b1a738ae45804d7e",
+        "android_client_info": {
+          "package_name": "com.example.aircity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052377844315-ppec0pl89jinjouk7qf25dit4mlt77sv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXGTug8bnOvBdvTO5dQoRH533v7tjddck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052377844315-ppec0pl89jinjouk7qf25dit4mlt77sv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SorryFragment">
+
+    <ImageView
+        android:id="@+id/boxallow"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/boxallow" />
+
+    <!-- city Air -->
+    <!-- next (ใช้เป็นปุ่มภาพไม่แน่ใจนะ)-->
+
+    <TextView
+        android:id="@+id/some_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="10dp"
+        android:text="City Air"
+        android:textColor="@color/white"
+        android:textSize="36sp" />
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="54dp"
+            android:layout_height="49dp"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_baseline_navigate_next_24"
+            />
+
+        <ImageView
+        android:id="@+id/sorry"
+        android:layout_width="123dp"
+        android:layout_height="128dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/sorry" />
+
+    <!-- ขออภัย -->
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="300dp"
+        android:text="ขออภัย"
+        android:textColor="#020288"
+        android:textSize="36sp" />
+
+    <!-- คุณไม่สามารถเข้าถึงพื้นที่ได้ เนื่องจากคุณอยู่นอกพื้นที่ให้บริการ -->
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="390dp"
+        android:text="คุณไม่สามารถเข้าถึงพื้นที่ได้ \nเนื่องจากคุณอยู่นอกพื้นที่ให้บริการ"
+        android:textAlignment="center"
+        android:textColor="#B9B9DE"
+        android:textSize="20sp" />
+
+
+
+</FrameLayout>

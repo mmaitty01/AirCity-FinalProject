@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homePage"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_location_on_24"
+        android:title="แผนที่"/>
+    <item
+        android:id="@+id/searchPage"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="ค้นหา"/>
+    <item
+        android:id="@+id/forecastPage"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_calendar_today_24"
+        android:title="พยากรณ์ล่วงหน้า"
+        />
+    <item
+        android:id="@+id/reportPage"
+        android:enabled="true"
+        android:icon="@drawable/ic_report"
+        android:title="แจ้งเตือน"/>
+
+    <item
+        android:id="@+id/settingPage"
+        android:enabled="true"
+        android:icon="@drawable/ic_about"
+        android:title="เกี่ยวกับเรา"/>
+</menu>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainAppFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation">
+
+
+    </FrameLayout>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:layout_alignParentBottom="true"
+
+
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="0dp"
+            android:background="#4a148c"
+            app:itemIconSize="30dp"
+            app:itemIconTint="@drawable/tab_color"
+            app:itemTextColor="#7BFBFB"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_navigation_menu">
+
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+</RelativeLayout>
+<!--
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+     <TextView
+
+     android:id="@+id/texticon"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+          android:shadowColor="#FFFFFF"
+
+            android:text="         แผนที่                 ค้นหา         พยากรณ์ล่วงหน้า        แจ้งเตือน          เกี่ยวกับเรา"
+            android:textColor="#5FDFEF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:textSize="12sp" />
+    </RelativeLayout>-->
+
+
+</RelativeLayout>

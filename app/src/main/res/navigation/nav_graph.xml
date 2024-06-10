@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/onboardingFragment2">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.aircity.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcome_to_onboarding"
+            app:destination="@id/onboardingFragment2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingFragment2"
+        android:name="com.example.aircity.OnboardingFragment"
+        android:label="fragment_onboarding"
+        tools:layout="@layout/fragment_onboarding" >
+        <action
+            android:id="@+id/action_onboarding_to_allow"
+            app:destination="@id/allowFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/allowFragment"
+        android:name="com.example.aircity.AllowFragment"
+        android:label="fragment_allow"
+        tools:layout="@layout/fragment_allow" >
+        <action
+            android:id="@+id/action_allow_to_main"
+            app:destination="@id/mainAppFragment" />
+        <action
+            android:id="@+id/action_allowFragment_to_location_me"
+            app:destination="@id/location_me" />
+        <action
+            android:id="@+id/action_allowFragment_to_sorryFragment"
+            app:destination="@id/sorryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainAppFragment"
+        android:name="com.example.aircity.MainAppFragment"
+        android:label="fragment_main_app"
+        tools:layout="@layout/fragment_main_app" />
+    <fragment
+        android:id="@+id/sorryFragment"
+        android:name="com.example.aircity.SorryFragment"
+        android:label="fragment_sorry"
+        tools:layout="@layout/fragment_sorry" >
+        <action
+            android:id="@+id/action_sorryFragment_to_mainAppFragment"
+            app:destination="@id/mainAppFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/location_me"
+        android:name="com.example.aircity.location_me"
+        android:label="fragment_location_me"
+        tools:layout="@layout/fragment_location_me" >
+        <action
+            android:id="@+id/action_location_me_to_sorryFragment"
+            app:destination="@id/sorryFragment" />
+    </fragment>
+
+
+</navigation>
